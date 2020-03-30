@@ -1,0 +1,10 @@
+{
+  "name": "address_book_challenge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Steve <designerofthings@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^4.2.0"
+  }
+}
