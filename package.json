@@ -8,6 +8,7 @@
     "cypress": "^4.2.0"
   },
   "dependencies": {
+    "browser-sync": "^2.26.7",
     "superstatic": "^6.0.4"
   },
   "scripts": {

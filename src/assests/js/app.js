@@ -9,7 +9,7 @@ const renderContacts = () => {
         const ul = document.createElement('ul')
     contacts.forEach(contact => {
         let li = document.createElement('li')
-            
+
         li.innerHTML = `
             <span>${contact.name}</span> |
             <span>${contact.email}</span> |
@@ -26,6 +26,17 @@ const renderContacts = () => {
 document.addEventListener('DOMContentLoaded', () =>{
     renderContacts()
     const contactForm = document.getElementById('new-contact-form')
+    const toggleFormVisibilityButton = document.getElementById('add-contact')
+    contactForm.style.display = 'none'
+
+    toggleFormVisibilityButton.addEventListener('click', () => {
+        if (contactForm.style.display === '') {
+                contactForm.style.display = 'none'
+        } else {
+                contactForm.style.display =  ''
+        }
+    })
+
     contactForm.addEventListener('submit', event => {
         event.preventDefault()
 
@@ -51,3 +62,4 @@ document.addEventListener('DOMContentLoaded', () =>{
         contactForm.reset()
     })
 })
+

@@ -1,5 +1,5 @@
 describe ('User can create a contact', () => {
-    it ('test', () => {
+    beforeEach ('test', () => {
         cy.visit('http://localhost:3001')
         cy.get('#add-contact').click()
         cy.get('#name').type('Thomas')
