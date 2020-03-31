@@ -32,6 +32,7 @@ input[type="text"] {
 
 input[type="email"] {
     font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
     width: 75%;
     padding: 12px 1px;
     margin: 10px 0;
@@ -43,6 +44,7 @@ input[type="email"] {
 
 textarea[type="text"] {
     font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
     width: 75%;
     padding: 12px 1px;
     margin: 10px 0;

@@ -4,7 +4,7 @@ describe ('user can delete a contact', () => {
     })
 
     it('by clicking the "Delete Contact" button', () => {
-        
+        cy.get('#delete-contact').click()
         })
 
 })
