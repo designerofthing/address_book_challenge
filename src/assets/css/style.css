@@ -1,0 +1,112 @@
+body {
+    font-family: 'Cormorant Garamond', serif;
+    color: #5d5b6a;
+    background-color: #f5cdaa;
+    margin: auto ;
+    margin-top: 25px;
+    width: 50%;
+    border: 5px dotted #cfb495;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px ;
+    padding: 10px;
+    text-align: center;
+}
+
+label {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+input[type="text"] {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    width: 75%;
+    padding: 12px 1px;
+    margin: 10px 0;
+    display: inline-block;
+    border: solid  #758184;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+input[type="email"] {
+    font-family: 'Cormorant Garamond', serif;
+    width: 75%;
+    padding: 12px 1px;
+    margin: 10px 0;
+    display: inline-block;
+    border: solid  #758184;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+textarea[type="text"] {
+    font-family: 'Cormorant Garamond', serif;
+    width: 75%;
+    padding: 12px 1px;
+    margin: 10px 0;
+    display: inline-block;
+    border: solid  #758184;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-bottom: 10px;
+    background-color:  #cfb495;
+    border: solid  #758184;
+    color:#5d5b6a;
+    padding: 10px 10px;
+    width: 75%;
+    text-align: center;
+    text-decoration: none;
+    font-style: italic;
+    display: inline-block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px ;
+}
+*:focus {
+    outline: none;
+}
+
+input[type="submit"] {
+    margin-bottom: 10px;
+    background-color:  #cfb495;
+    border: solid  #758184;
+    color:#5d5b6a;
+    padding: 10px 10px;
+    width: 75%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
+    font-style: italic;
+    letter-spacing: 3px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px ;
+}
+input:hover[type="submit"] {
+    color: white;
+}
+button:hover {
+    color: white;
+}
+
+
+span[id="firstLetter"] {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 70px;
+    font-style: italic;
+    letter-spacing: 6px;
+}
+h1 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 50px;
+    font-style: italic;
+    letter-spacing: 6px;
+}
