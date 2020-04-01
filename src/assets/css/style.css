@@ -4,14 +4,18 @@ body {
     background-color: #f5cdaa;
     margin: auto ;
     margin-top: 25px;
-    width: 50%;
-    border: 5px dotted #cfb495;
+    width: 70%;
+    /*border: 5px dotted #cfb495;
     border-top-right-radius: 100px;
-    border-bottom-right-radius: 100px ;
+    border-bottom-right-radius: 100px ;*/
     padding: 10px;
     text-align: center;
 }
-
+#logo {
+    width: 30%;
+    position: relative;
+    margin: 25px 0 25px 0;
+}
 label {
     font-family: 'Cormorant Garamond', serif;
     font-size: 20px;
@@ -55,6 +59,7 @@ textarea[type="text"] {
 }
 
 button {
+    margin-top: 25px;
     margin-bottom: 10px;
     background-color:  #cfb495;
     border: solid  #758184;
@@ -98,9 +103,12 @@ input:hover[type="submit"] {
 button:hover {
     color: white;
 }
+#contact-list {
+    font-size: 22px;
+}
 
 
-span[id="firstLetter"] {
+/*span[id="firstLetter"] {
     font-family: 'Cormorant Garamond', serif;
     font-size: 70px;
     font-style: italic;
@@ -111,4 +119,9 @@ h1 {
     font-size: 50px;
     font-style: italic;
     letter-spacing: 6px;
+}
+*/
+div[id="contact-list"] {
+    font-size: 20px;
+    text-align: center;
 }

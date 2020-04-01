@@ -11,7 +11,7 @@ const renderContacts = () => {
         let li = document.createElement('li')
 
         li.innerHTML = `
-            <span>${contact.name}</span> |
+            <span>${contact.name}</span> |  
             <span>${contact.email}</span> |
             <span>${contact.phone}</span>
         `

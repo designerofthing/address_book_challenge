@@ -3,8 +3,8 @@ describe ('user can delete a contact', () => {
         cy.visit('http://localhost:3001')
     })
 
-    it('by clicking the "Delete Contact" button', () => {
-        cy.get('#delete-contact').click()
+    it('by clicking the "Find Contact" button', () => {
+        cy.get('#find-contact').click()
         })
 
 })
