@@ -7,8 +7,7 @@ const renderContacts = () => {
     if (contacts) {
         div.innerHTML = ''
         const ul = document.createElement('table')
-        ul.innerHTML = `<button id="delete-contact">Delete Contact</button>
-        <button id="edit-contact">Edit Contact</button>
+        ul.innerHTML = `
         <table id="contact-list-header">
         <tr>
         <th>Name</th>
@@ -87,5 +86,8 @@ var deleteButton = document.getElementById('delete-contact');
 deleteButton.addEventListener('click', () => {
   firstRow.delete();
   renderContacts();
+
+  <button id="delete-contact">Delete Contact</button>
+        <button id="edit-contact">Edit Contact</button>
 });*/
 
