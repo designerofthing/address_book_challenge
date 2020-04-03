@@ -24,7 +24,7 @@ const renderContacts = () => {
 
         li.innerHTML = `
             <table id="contact-list">
-                <tr>
+                <tr id = "first-row">
                     <td>${contact.name}</td>   
                     <td>${contact.email}</td> 
                     <td>${contact.phone}</td>
@@ -35,7 +35,7 @@ const renderContacts = () => {
             </table> 
         `
         ul.appendChild(li)
-        let firstRow = 
+        
     })
     div.appendChild(ul)
 } else {
@@ -82,9 +82,10 @@ document.addEventListener('DOMContentLoaded', () =>{
         contactForm.reset()
     })
 })
-var deleteButton = document.getElementById("delete-button");
-deleteButton.onclick = function() {
+/*let firstRow = document.querySelector('first-row');
+var deleteButton = document.getElementById('delete-contact');
+deleteButton.addEventListener('click', () => {
   firstRow.delete();
   renderContacts();
-}
+});*/
 
