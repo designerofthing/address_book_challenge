@@ -6,16 +6,36 @@ const renderContacts = () => {
     let div = document.querySelector('#contact-list')
     if (contacts) {
         div.innerHTML = ''
-        const ul = document.createElement('ul')
+        const ul = document.createElement('table')
+        ul.innerHTML = `<button id="delete-contact">Delete Contact</button>
+        <button id="edit-contact">Edit Contact</button>
+        <table id="contact-list-header">
+        <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone</th>
+        <th>Company</th>
+        <th>Notes</th>
+        <th>Twitter</th>
+        </tr>
+        </table>`
     contacts.forEach(contact => {
-        let li = document.createElement('li')
+        let li = document.createElement('tr')
 
         li.innerHTML = `
-            <span>${contact.name}</span> |  
-            <span>${contact.email}</span> |
-            <span>${contact.phone}</span>
+            <table id="contact-list">
+                <tr>
+                    <td>${contact.name}</td>   
+                    <td>${contact.email}</td> 
+                    <td>${contact.phone}</td>
+                    <td>${contact.company}</td> 
+                    <td>${contact.notes}</td>
+                    <td>${contact.twitter}</td> 
+                </tr>
+            </table> 
         `
         ul.appendChild(li)
+        let firstRow = 
     })
     div.appendChild(ul)
 } else {
@@ -62,4 +82,9 @@ document.addEventListener('DOMContentLoaded', () =>{
         contactForm.reset()
     })
 })
+var deleteButton = document.getElementById("delete-button");
+deleteButton.onclick = function() {
+  firstRow.delete();
+  renderContacts();
+}
 

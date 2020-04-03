@@ -103,8 +103,19 @@ input:hover[type="submit"] {
 button:hover {
     color: white;
 }
+
+table {
+    border-spacing: 10px;
+    display: inline-block;
+    width: auto;
+}
 #contact-list {
     font-size: 22px;
+    table-layout: auto;
+}
+#contact-list tr {
+    padding: 15px;
+    width: 100%;
 }
 
 
@@ -121,7 +132,3 @@ h1 {
     letter-spacing: 6px;
 }
 */
-div[id="contact-list"] {
-    font-size: 20px;
-    text-align: center;
-}
