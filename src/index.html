@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Address Book</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,400i&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img id="logo" src="assets/images/Contactstudiologo.png" alt="Contactstudiologo">
+    <!--<h1><span id="firstLetter">C</span>ontacts</h1>-->
+    <button id="add-contact">Add Contact</button>
+    <br>
+    <br>
+    <form id="new-contact-form">
+        <label for="name">Name</label><br>
+        <input id="name" name="name" type="text"><br>
+        <label for="email">Email</label><br>
+        <input type="email" name="email" id="email"><br>
+        <label for="phone">Phone</label><br>
+        <input id="phone" name="phone" type="text"><br>
+        <label for="company">Company</label><br>
+        <input id="company" name="company" type="text"><br>
+        <label for="notes">Notes</label><br>
+        <textarea name="notes" id="notes" type="text"></textarea><br>
+        <label for="twitter">Twitter</label><br>
+        <input type="text" name="twitter" id="twitter">
+        <br>
+        <br>
+        <input id="submit" type="submit" value="Save Contact">
+    </form>
+    <div id="contact-list"></div>
+    <script src="./assets/js/app.js"></script>
+    
+</body>
+</html>
